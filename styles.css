@@ -1,0 +1,89 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: aqua;
+    
+}
+
+.aside {
+    grid-area: aside;
+    background-color: rgb(177, 177, 90);
+    width: 40vh;
+}
+
+
+
+.main {
+    grid-area: main;
+    /* background-color: blue; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    
+    /* padding-left: 100vh; */
+    /* padding-right: 100vh; */
+    
+}
+
+.footer {
+    grid-area: footer; 
+    background-color: aqua;
+    
+}
+
+.content {
+    display: flex;
+    justify-content:space-between;
+    height: 70vh;  
+    
+}
+
+.greetings {
+    display: flex;
+    justify-content: center;
+    color: blue;
+    padding-top: 15px;
+}
+
+.parting {
+    display: flex;
+    justify-content: center;
+    color: blue;
+    padding-top: 10px;
+}
+
+.football {
+    width: 320px;
+    height: 220px;
+    padding-left: 10px;
+    
+}
+
+.ball {
+    display: block;
+    margin-left: auto;
+    width: 100px;
+    height: 70px;
+    
+}
+
+
+@media screen and (max-width: 400px) { 
+    .aside  {
+        margin-top: 90vh;
+    }
+}
+
+p {
+ text-align: center;
+}
+
